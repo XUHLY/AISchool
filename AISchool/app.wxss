@@ -1,0 +1,14 @@
+page {
+  background-color:#1F2A3E;/**全局背景色**/
+}
+
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 

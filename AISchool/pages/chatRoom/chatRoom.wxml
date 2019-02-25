@@ -1,0 +1,40 @@
+<cover-view class='plateImg' animation="{{animationData}}"></cover-view>
+
+    <scroll-view class="chatView" scroll-y='true' scroll-into-view='flag'>
+
+        <view class='aitellS'>
+        <view class='aiImgS'><open-data type="userAvatarUrl"></open-data></view>
+        <text class='aiTextS'>您好，我是淮师智能助手，您可以对我说：
+
+        <text>我要听李建的歌</text>
+        <text>今天天气怎么样</text>
+        <text>我要查快递</text>
+        <text>XXX是什么意思</text>
+        <text>今天什么课</text>
+        <text>我要点餐</text>
+        <text>您还可以跟我闲聊哦</text>
+        </text>
+        </view>
+
+
+        <view wx:for="{{userText}}" wx:key="*this" class='userAsk'>
+            <text class='userText'>{{item}}</text>
+            <view class='userImg'><open-data type="userAvatarUrl"></open-data></view>
+        </view>
+        <view wx:for="{{aiText}}" class='aitell'>
+            <view class='aiImg'><open-data type="userAvatarUrl"></open-data></view>
+            <text class='aiText'>{{item}}</text>
+        </view>
+
+        <view id="flag"></view>
+    </scroll-view>
+
+
+
+    <view class='audioGo'>
+        <view class='audioGoPlay' bindlongpress='audioGoPlay' bindtouchend='audioGoEnd' style='background:{{touchedColor}}; width:{{touchedwidth}}; height:{{touchedheight}} '>
+        <image src='/images/audioGo.png' mode='scaleToFill'></image>
+    </view>
+
+
+</view>
