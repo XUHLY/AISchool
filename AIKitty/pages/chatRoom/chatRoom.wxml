@@ -1,0 +1,67 @@
+<!--<cover-view class='plateImg' animation="{{animationData}}"></cover-view>-->
+<movable-area style="width:100%;">
+  <movable-view direction='all' hidden='{{plateHidden}}' style=' width: 180rpx; height: 180rpx; border-radius: 50%;z-index:888;margin-left:70%; margin-top:20rpx;'>
+    <navigator url='../musicPlay/musicPlay'>
+      <image class='plateImg' src='{{plateImgUrl}}' animation="{{animationData}}"></image>
+    </navigator>
+  </movable-view>
+  <scroll-view id="chatViewId" class="chatView" scroll-y='true' scroll-top='{{scrollNum}}' style='height:{{heightRpx[0]}}rpx;'>
+    <view class='aitellS'>
+      <view class='aiImgS'>
+        <image class='aiImgS' src='../../images/ai.jpg'></image>
+        <!--<open-data type="userAvatarUrl"></open-data>-->
+      </view>
+      <text class='aiTextS'>您好，我是AI小可爱，您可以对我说：
+
+    <text>我要听李建的歌</text>
+      <text>今天XX的天气怎么样</text>
+      <text>我要查快递</text>
+      <text>我在哪里</text>
+      <text>今天什么课</text>
+      <text>讲一个笑话吧</text>
+      <text>天文地理古今中外名词你都可以问我</text>
+      <text>您还可以跟我闲聊哦</text>
+      </text>
+    </view>
+
+    <view id='childChatViewId' wx:key="" wx:for="{{text}}" wx:for-index="index">
+      <view wx:if="{{item.role == 1}}" class='userAsk'>
+        <text class='userText'>{{item.chatInfo}}</text>
+        <view class='userImg'>
+          <open-data type="userAvatarUrl"></open-data>
+        </view>
+      </view>
+      <view class="systemMessageInfo" wx:if="{{item.role == 2}}">【 系统提示 】：{{item.chatInfo}},请确保麦克风正常可用！</view>
+      <view wx:if="{{item.role == 0}}" class='aitell'>
+        <view class='aiImg'>
+          <image class='aiImg' src='../../images/ai.jpg'></image>
+          <!--<open-data type="userAvatarUrl"></open-data>-->
+        </view>
+        <text class='aiText'>{{item.say}}</text>
+      </view>
+    </view>
+    <view hidden='{{hidden}}' class='userAsk'>
+      <text class='userText'>正在识别。。。</text>
+      <view class='userImg'>
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+    </view>
+    <!-- <view wx:for="{{text}}" wx:for-index="index">
+       <view wx:if="{{index %2 == 0}}" class='userAsk'>
+            <text class='userText'>{{item.chatInfo}}</text>
+            <view class='userImg'><open-data type="userAvatarUrl"></open-data></view>
+        </view>
+        <view  wx:if="{{index %2 != 0}}" class='aitell'>
+            <view class='aiImg'><open-data type="userAvatarUrl"></open-data></view>
+            <text class='aiText'>{{item.say}}</text>
+        </view>
+      </view>-->
+  </scroll-view>
+  <view class='audioGo' style='height:{{heightRpx[1]}}rpx;'>
+    <view class='audioGoPlay' bindlongpress='audioGoPlay' bindtouchend='audioGoEnd' >
+      <image src='{{audioGoPic}}' mode='scaleToFill'  ></image>
+    </view>
+    <navigator url='../ForMe/ForMe'><view class='flag'> ©XT ForMe  </view></navigator>
+  </view>
+  
+</movable-area>

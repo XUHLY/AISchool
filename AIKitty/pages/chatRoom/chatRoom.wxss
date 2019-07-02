@@ -1,0 +1,151 @@
+.chatView {
+    width: 100%;
+    height: 800rpx;
+    background: #EDEDED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aitellS {
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    padding-left:20rpx; 
+    margin-top: 40rpx;
+    margin-bottom: 40rpx;
+}
+
+.aiImgS {
+    width: 90rpx;
+    height: 90rpx;
+}
+
+.aiTextS {
+    width: 400rpx;
+    font-size: 35rpx;
+    font-weight: initial;
+    line-height: 50rpx;
+    margin-left: 20rpx;
+    margin-top: 20rpx;
+    border-radius: 15rpx;
+    background: rgb(255, 255, 255);
+    padding: 10rpx 20rpx 10rpx 20rpx;
+}
+
+.aiTextS text{
+    display: block;
+}
+
+.userAsk {
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-start;
+    padding-right:20rpx; 
+     margin-bottom: 40rpx;
+}
+
+.userImg {
+    width: 90rpx;
+    height: 90rpx;
+}
+
+.userText {
+    max-width: 500rpx;
+    font-size: 35rpx;
+    font-weight: initial;
+    line-height: 70rpx;
+    text-align: right;
+    margin-right: 20rpx;
+    margin-top: 20rpx;
+    border-radius: 15rpx;
+    background: #A1E461;
+    padding: 10rpx 20rpx 10rpx 20rpx;
+}
+
+.aitell {
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    padding-left:20rpx; 
+    margin-bottom: 40rpx;
+}
+
+.aiImg {
+    width: 90rpx;
+    height: 90rpx;
+}
+
+.aiText {
+    max-width: 500rpx;
+    font-size: 35rpx;
+    font-weight: initial;
+    line-height: 70rpx;
+    text-align: left;
+    margin-left: 20rpx;
+    margin-top: 20rpx;
+    border-radius: 15rpx;
+    background: rgb(255, 255, 255);
+    padding: 10rpx 20rpx 10rpx 20rpx;
+}
+
+.systemMessageInfo {
+  font-size: 20rpx;
+  text-align: center;
+  width: 500rpx;
+  height: 25rpx;
+  line-height: 30rpx;
+  border-radius: 20rpx;
+  background-color: rgba(0, 0,0, 0.1);
+  margin: 0 auto;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+ 
+}
+.audioGo {
+    width: 100%;
+    height: 400rpx;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.audioGoPlay {
+    width: 190rpx;
+    height: 190rpx;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.audioGoPlay image {
+    width: 190rpx;
+    height: 190rpx;
+    border-radius: 50%;
+}
+
+.plateImg {
+    position: absolute;
+    width: 180rpx;
+    height: 180rpx;
+    border-radius: 50%;
+    z-index: 999;
+    background: pink;
+    opacity: 0.8;
+}
+.flag{
+    width:190rpx; 
+    height:70rpx; 
+    background:#00aa11;
+    border-radius: 10rpx;
+    color: #FFF;
+    font-size: 30rpx;
+    line-height: 70rpx;
+    text-align: center;
+    position: absolute;
+    right: 40rpx;
+    bottom: 210rpx;
+}

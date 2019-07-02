@@ -1,0 +1,25 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/musicPlay/musicPlay",
+        "pages/chatRoom/chatRoom",
+        "pages/showFuture/showFuture",
+        "pages/map/map",
+        "pages/ForMe/ForMe"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#1F2A3E",
+        "navigationBarTitleText": "AI 小可爱",
+        "navigationBarTextStyle": "white"
+    },
+    "requiredBackgroundModes": [
+        "audio"
+    ],
+    "permission": {
+        "scope.userLocation": {
+            "desc": "我得问问手机，我们在哪里！"
+        }
+    },
+    "sitemapLocation": "sitemap.json"
+}

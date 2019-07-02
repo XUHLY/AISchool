@@ -1,0 +1,54 @@
+<!-- audio.wxml -->
+<view class='.musicHeader' style='height:{{heightRpx[2]}}rpx; line-height: {{heightRpx[2]}}rpx;'>
+    <!--<image src='{{headerPic}}' mode='aspectFill'></image>-->
+    <text>预见未来，遇见你！</text>
+</view>
+
+<view class='musicPic' style='background-color:#ffffff' style='height:{{heightRpx[0]}}rpx' >
+  <image class='musicPicBg' src='{{poster}}' mode='aspectFill' style='height:{{heightRpx[0]}}rpx' ></image>
+  <view   animation="{{animationData}}">
+       <image class='plate' src="/images/plate.png"  mode='aspectFill'/>
+       <image class='plateImg' src="{{poster}}"  mode='aspectFill'/>
+  </view>
+ 
+</view>
+ 
+<view class='musicFooter' style='height:{{heightRpx[1]}}rpx;bottom:{{heightRpx[3]}}rpx;'>
+<view class='slider'>
+<!--<progress percent="80" stroke-width="4" activeColor='rgba(216, 30, 6, 0.9)' backgroundColor='#FFFFFF' active />-->
+  <slider bindchange="changeMusicProgress" min='0' value='{{progressCurrentTime}}' max='{{progressTime}}' backgroundColor='#FFFFFF' activeColor='rgba(216, 30, 6, 0.9)' block-size='12' block-color='rgba(216, 30, 6, 0.9)' step="1" />
+</view>
+  <view class="detail">
+
+    <view class='detailLeft'>
+        <text>{{currentTime}}</text>
+    </view>
+    <view class='detailCenter'>
+        <text class='songName'>{{name}}</text>
+        <text class='singer'>{{author}}</text>
+    </view>
+    <view class='detailRight'>
+        <text>{{time}}</text>
+    </view>
+  </view>
+  <view class='musicUtils'>
+    <view bindtouchstart='listTap' bindtouchend='listTapEnd'>
+      <image class="list" src='{{list}}' mode='scaleToFill' style='width:{{listWidthBar}};height:{{listHeightBar}}'></image>
+    </view>
+    <view bindtouchstart='prevTap' bindtouchend='prevTapEnd' >
+      <image class="prev" src='{{prev}}' mode='scaleToFill' style='width:{{prevWidthBar}};height:{{prevHeightBar}}'></image>
+    </view>
+    <view bindtap='playTap'>
+      <image class="play" src='{{play}}' mode='scaleToFill'></image>
+    </view>
+    <view bindtouchstart='nextTap' bindtouchend='nextTapEnd'>
+      <image class="next" src='{{next}}' mode='scaleToFill' style='width:{{nextWidthBar}};height:{{nextHeightBar}}'></image>
+    </view>
+    <view bindtap='loopTap'>
+      <image class="loop" src='{{loop}}' mode='scaleToFill'></image>
+    </view>
+  </view>
+
+  
+</view>
+<navigator url='../ForMe/ForMe'><view class='flag'> ©XT ForMe  </view></navigator>

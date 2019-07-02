@@ -1,0 +1,18 @@
+<view class='coderinfo'>
+<image class='coderinfo-avatar' src='../../images/coder.png'></image>
+<view class='coderinfo-introduction'>
+<text>作者：Leyoung</text>
+<text>年龄：**</text>
+<text>血型：O</text>
+<text decode="{{true}}" space="{{true}}">介绍:
+
+&nbsp;&nbsp;&nbsp;&nbsp;这个小程序是对未来智能校园的展望，限于技术原因，姑且把手机等价于未来的智能机器人终端，未来，人们的生活将被各种新兴技术填满，人工智能+全息投影+增强现实技术会给人们带来极其便利的体验，对于学生，这些将便利学生的生活、学习、出行、就餐、购物等方方面面。期待当下，预见未来吧。</text>
+<text decode="{{true}}" space="{{true}}">写给你们:
+
+&nbsp;&nbsp;&nbsp;&nbsp;欢迎你来到这里，在这里，小V可以帮助你做很多事情，你可以让它给你查找并播放你想听的歌曲、询问十五天内的天气情况、给你讲笑话、帮你查快递、帮助你定位你的位置。小V是个博学者，他可以给你介绍各种知识，各种名词。小V还自带逗比属性，他可以陪你侃大山。当然，小V还不足够聪明，并不能帮你解决所有事情，未来，本人将不断优化小V，让它越来越聪明，争取帮你做更多的事情。如果你有想要小V能够做的事情欢迎联系我，争取用你的想法武装小V，让小V变的神通广大。 </text>
+
+<text>联系我：vividleyoung@foxmail.com</text>
+<text>CopyRight：皖ICP备18012487号-2</text>
+</view>
+
+</view>

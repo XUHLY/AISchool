@@ -1,0 +1,161 @@
+.musicHeader {
+  width: 100%;
+  height: 100rpx;
+  background: rgba(216, 30, 6, 0.9);
+  text-align: center;
+  line-height: 100rpx;
+  color: #fff;
+}
+
+.musicPic {
+  width: 100%;
+  height: 600rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity:：0.3;
+}
+
+.musicPicBg {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 600rpx;
+}
+
+.musicPic view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450rpx;
+  height: 450rpx;
+  border-radius: 50%;
+  z-index: 999;
+}
+
+.plate {
+  position: absolute;
+  z-index: 1;
+  width: 450rpx;
+  height: 450rpx;
+  border-radius: 50%;
+}
+.plateImg {
+  position: absolute;
+  z-index: 999;
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+.slider{
+    display: flex;
+    position: relative;
+}
+slider{
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 0;
+    top: -18rpx;
+    z-index: 9999;
+}
+
+.detail {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.detail view {
+  width: 33.33%;
+  height: 200rpx;
+  display: flex;
+}
+
+.detailRight {
+  justify-content: flex-end;
+  padding-right: 1%;
+}
+
+.detailLeft {
+  justify-content: flex-start;
+  padding-left: 1%;
+}
+
+.detailCenter {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.songName {
+  font-size: 40rpx;
+  overflow :hidden;
+  height: 40rpx;
+  line-height:  40rpx;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 10rpx;
+}
+
+.singer {
+  font-size: 30rpx;
+  color: #ccc;
+  overflow :hidden;
+  height: 30rpx;
+  line-height: 30rpx;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.musicUtils {
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+}
+
+.musicUtils view {
+  width: 20%;
+  height: 100rpx;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list, .loop {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 0 auto;
+}
+
+.prev, .next {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.play {
+  width: 150rpx !important;
+  height: 150rpx !important;
+}
+.musicFooter{
+    width: 100%;
+    position: fixed;
+    z-index: 8888;
+}
+.flag{
+    width:190rpx; 
+    height:70rpx; 
+    background:#00aa11;
+    border-radius: 10rpx;
+    color: #FFF;
+    font-size: 30rpx;
+    line-height: 70rpx;
+    text-align: center;
+    position: absolute;
+    right: 20rpx;
+    bottom: 20rpx;
+    z-index: 9999;
+
+}

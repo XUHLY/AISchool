@@ -1,0 +1,18 @@
+<view class='showFutureView'>
+    <text class='title'>{{title}}</text>
+    <image src='{{imgUrlIndex}}' mode='aspectFit' class='img'></image>
+
+    <view hidden='{{ishidden}}' class='introduction'>
+        <text> {{text}} </text>
+    </view>
+
+    <view class='footer'>
+        <!--<view>♏</view>-->
+        <image id='0' class='{{activeClass0}}' src='{{imgUrl[0]}}' mode='{{mode0}}' bindtap='seitchImg'></image>
+        <image id='2' class='{{activeClass2}}' src='{{imgUrl[2]}}' mode='{{mode2}}' bindtap='seitchImg'></image>
+        <image id='3' class='{{activeClass3}}' src='{{imgUrl[3]}}' mode='{{mode3}}' bindtap='seitchImg'></image>
+        <image id='4' class='{{activeClass4}}' src='{{imgUrl[4]}}' mode='{{mode4}}' bindtap='seitchImg'></image>
+        <image id='1' class='{{activeClass1}}' src='{{imgUrl[1]}}' mode='{{mode1}}' bindtap='seitchImg'></image>
+        <!--<view>♓</view>-->
+    </view>
+</view>

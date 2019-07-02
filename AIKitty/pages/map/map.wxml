@@ -1,0 +1,49 @@
+
+<view></view>
+
+<map subkey='TB4BZ-5DHC5-NMPIT-Q6BLT-GYI7K-JLBIJ'
+id="map" 
+longitude="{{longitude}}" 
+latitude="{{latitude}}" 
+scale="14"
+show-location  
+style="width: 100%; height: 1300rpx;"
+
+enable-3D  = "true"
+show-compass = "true"
+
+
+bindpoitap = 'pointInfo'
+markers="{{markers}}"
+bindmarkertap="markertap"
+polyline="{{polyline}}"
+include-points = "{{includedpoints}}"
+>
+</map>
+<!--subkey='TB4BZ-5DHC5-NMPIT-Q6BLT-GYI7K-JLBIJ' 
+
+longitude	          Number		    中心经度	
+latitude	          Number		    中心纬度	
+scale	              Number	16	    缩放级别，取值范围为5-18	
+markers	              Array		        标记点	
+covers	              Array		        即将移除，请使用 markers	
+polyline	          Array		        路线	
+polygons	          Array		        多边形	2.3.0
+circles	              Array		        圆		
+include-points	      Array		        缩放视野以包含所有给定的坐标点	
+show-location	      Boolean		    显示带有方向的当前定位点	
+subkey	              String	''	    个性化地图使用的key，仅初始化地图时有效	2.3.0
+enable-3D	          Boolean	false	展示3D楼块(工具暂不支持）	2.3.0
+show-compass	      Boolean	false	显示指南针	2.3.0
+enable-overlooking    Boolean	false	开启俯视	2.3.0
+enable-zoom	          Boolean	true	是否支持缩放	2.3.0
+enable-scroll	      Boolean	true	是否支持拖动	2.3.0
+enable-rotate	      Boolean	false	是否支持旋转	2.3.0
+bindmarkertap	      EventHandle		点击标记点时触发，会返回marker的id	
+bindcallouttap	      EventHandle		点击标记点对应的气泡时触发，会返回marker的id	1.2.0
+bindcontroltap	      EventHandle		点击控件时触发，会返回control的id	
+bindregionchange	  EventHandle		视野发生变化时触发	2.3.0起增加causedBy
+bindtap	              EventHandle		点击地图时触发	
+bindupdated	          EventHandle		在地图渲染更新完成时触发	1.6.0
+bindpoitap	          EventHandle		点击地图poi点时触发
+-->

@@ -1,0 +1,70 @@
+.showFutureView {
+  width: 100%;
+  flex-direction: colum;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  display: block;
+  font-size: 20pt;
+  color: #fff;
+}
+
+.img {
+  width: 100%;
+  height: 800rpx;
+  margin-top: 20rpx;
+}
+
+.introduction{
+  width: 100%;
+  height: 130rpx;
+  background:rgba(0, 0,0, 0.2);
+  font-size: 20rpx;
+  position: fixed;
+  bottom: 170rpx;
+  padding-top:50rpx; 
+  padding-bottom:30rpx; 
+}
+.introduction text{
+  width: 100%;
+  height: 190rpx;
+  text-align: center;
+  line-height: 30rpx;
+  color: #fff;
+}
+
+.footer {
+  width: 100%;
+  height: 140rpx;
+  position: fixed;
+  bottom: 20rpx;
+  background:rgba(0, 0,0, 0.2);
+  display: flex;
+  flex-direction:  row;
+  justify-content: space-between;
+  align-items:  center;
+}
+.footer view {
+  font-size: 60rpx;
+  line-height: 120rpx;
+  width: 20%;
+  height: 120rpx;
+  text-align: center;
+}
+.footer image {
+  font-size: 60rpx;
+  line-height: 120rpx;
+  width: 20%;
+  height: 120rpx;
+  text-align: center;
+  padding: 10rpx;
+}
+.footer .active {
+  width: 70% !important;
+  height: 150rpx !important;
+}
+
+
