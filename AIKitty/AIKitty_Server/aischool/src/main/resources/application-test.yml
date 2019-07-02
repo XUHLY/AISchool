@@ -1,0 +1,50 @@
+test:
+  file:
+    dir: /usr/local/tomcat/aischool/audiotemp
+  redis:
+    namespace: testdata
+server:
+    context-path: /aischool
+spring:
+    mvc:
+        static-path-pattern: /** #所有的静态资源请求
+    resources:
+        static-locations: classpath:/META-INF/resources/,file:/usr/local/tomcat/aischool/audiotemp/,classpath:/resources/,classpath:/static/,classpath:/public/ #资源映射地址为file:D://User/，图片存放的真实路径
+    datasource:
+        type: com.alibaba.druid.pool.DruidDataSource
+        druid:
+            first:  #数据源1
+                driver-class-name: com.mysql.cj.jdbc.Driver
+                url: jdbc:mysql://10.173.204.42:3306/test?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+                username: root
+                password: 123456
+            second:  #数据源2
+                driver-class-name: com.mysql.cj.jdbc.Driver
+                url: jdbc:mysql://10.173.204.42:3306/test?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT%2B8
+                username: root
+                password: 123456
+            initial-size: 10
+            max-active: 100
+            min-idle: 10
+            max-wait: 60000
+            pool-prepared-statements: true
+            max-pool-prepared-statement-per-connection-size: 20
+            time-between-eviction-runs-millis: 60000
+            min-evictable-idle-time-millis: 300000
+            validation-query: SELECT 1 FROM DUAL
+            test-while-idle: true
+            test-on-borrow: false
+            test-on-return: false
+            stat-view-servlet:
+                enabled: true
+                url-pattern: /druid/*
+                #login-username: admin
+                #login-password: admin
+            filter:
+                stat:
+                    log-slow-sql: true
+                    slow-sql-millis: 1000
+                    merge-sql: true
+                wall:
+                    config:
+                        multi-statement-allow: true

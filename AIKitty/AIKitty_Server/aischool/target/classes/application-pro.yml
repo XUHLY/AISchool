@@ -1,0 +1,16 @@
+test:
+  file:
+    dir: /usr/local/tomcats/aischool/audiotemp/
+server:
+    context-path: /aischool
+spring:
+    #所有的静态资源请求
+    mvc:
+        static-path-pattern: /** 
+    resources:
+        static-locations: file:/usr/local/tomcats/aischool/audiotemp/,classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
+    datasource:
+      url:jdbc:mysql://localhost:3306/aischool
+      username:root
+      password:root
+      driver-class-name:com.mysql.jdbc.Driver 

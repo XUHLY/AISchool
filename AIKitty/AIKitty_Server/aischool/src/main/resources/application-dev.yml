@@ -1,0 +1,10 @@
+test:
+  file:
+    dir: E:/aischool/audiotemp/
+server:
+    context-path: /aischool
+spring:
+    mvc:
+        static-path-pattern: /** #所有的静态资源请求
+    resources:
+        static-locations: classpath:/META-INF/resources/,file:E://aischool/audiotemp/,classpath:/resources/,classpath:/static/,classpath:/public/ #资源映射地址为file:D://User/，图片存放的真实路径

@@ -1,0 +1,35 @@
+# Tomcat
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+  port: 8888
+  connection-timeout: 5000
+  server:
+    context-path: /aischool
+    
+# Mybatis配置
+spring:
+  # 环境 dev|test|pro
+  profiles:
+    active: pro
+  redis:
+    host: 
+    password: 
+    port: 
+    timeout: 
+    # lettuce基于netty并发时线程安全，jedis是直连线程不安全
+    lettuce:
+      pool:
+        #  连接池最大连接数 如果赋值为-1，则表示不限制 
+        max-active: 1000
+        # 连接池中的最大空闲连接，默认值也是8
+        max-idle: 8
+        # 连接池中的最小空闲连接，默认值也是0
+        min-idle: 0
+        # 等待可用连接的最大时间，单位毫秒，默认值为-1，表示永不超时
+        max-wait: -1
+        mybatis: 
+  configuration: 
+    map-underscore-to-camel-case: true
