@@ -1,4 +1,0 @@
-<view class='showFutureView'>
-    <text class='title'>{{title}}</text>
-    <image  src='{{imgUrlIndex}}' mode='aspectFit' class='img'></image>
-</view>
